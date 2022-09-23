@@ -1,0 +1,60 @@
+body{
+    
+	background:#000;
+    background-image: url('./background.png');
+    color:#FFF;
+}
+.card{
+    width: 18rem;
+    color:#000;
+    background-color: black;
+    color: #26b571;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    opacity: 0.8;
+}
+li{
+    list-style-type: none;
+}
+.AppContent{
+    display: grid;
+    grid-template:
+      'header'
+      'content';
+
+}
+.logo{
+    width:15%;
+    height:15%;
+}
+ul{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.header{
+    grid-area: header;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+.content{
+    grid-area: content;
+}
+.headerLeft{
+    width:30%;
+}
+.headerRight{
+    width:30%;
+}
